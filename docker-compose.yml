@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  moki-front:
+    build:
+      context: ./Frontend
+    container_name: moki-front
+    ports:
+      - "${FRONTEND_PORT}:80"
+
+volumes:
+  mysql-data:
