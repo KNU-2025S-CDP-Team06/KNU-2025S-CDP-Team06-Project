@@ -4,6 +4,8 @@ services:
   moki-front:
     build:
       context: ./Frontend
+      args:
+        BACKEND_URL: ${BACKEND_URL}
     container_name: moki-front
     ports:
       - "${FRONTEND_PORT}:80"
