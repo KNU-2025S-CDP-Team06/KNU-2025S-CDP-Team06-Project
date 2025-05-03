@@ -21,7 +21,7 @@ services:
       - moki-db
   moki-mlops:
     build:
-      context: "/MLOps"
+      context: "./MLOps"
     container_name: moki-mlops
     environment:
       - TZ=Asia/Seoul
