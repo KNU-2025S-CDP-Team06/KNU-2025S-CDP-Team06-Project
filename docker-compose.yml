@@ -17,6 +17,7 @@ services:
       - "${BACKEND_PORT}:${BACKEND_INNER_PORT}"
     environment:
       DATABASE_URL: ${DATABASE_URL}
+      TZ: Asia/Seoul
     depends_on:
       - moki-db
   moki-mlops:
