@@ -17,7 +17,7 @@ services:
       - "${BACKEND_PORT}:${BACKEND_INNER_PORT}"
     environment:
       DATABASE_URL: ${DATABASE_URL}
-      TZ: Asia/Seoul
+      TZ: "Asia/Seoul"
     depends_on:
       - moki-db
   moki-mlops:
@@ -25,7 +25,7 @@ services:
       context: "./MLOps"
     container_name: moki-mlops
     environment:
-      - TZ=Asia/Seoul
+      TZ: "Asia/Seoul"
   moki-db:
     image: mysql:8
     container_name: moki-db
