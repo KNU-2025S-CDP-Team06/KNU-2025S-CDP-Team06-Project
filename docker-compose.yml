@@ -34,6 +34,8 @@ services:
       - "${AI_PORT}:5001"
     depends_on:
       - moki-db
+    volumes:
+      - ai-models:/app/models
   moki-db:
     image: mysql:8
     container_name: moki-db
@@ -48,3 +50,4 @@ services:
 
 volumes:
   mysql-data:
+  ai-models:
