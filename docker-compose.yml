@@ -26,6 +26,14 @@ services:
     container_name: moki-mlops
     environment:
       TZ: "Asia/Seoul"
+  moki-ai:
+    build:
+      context: "./AI"
+    container_name: moki-ai
+    ports:
+      - "${AI_PORT}:5001"
+    depends_on:
+      - moki-db
   moki-db:
     image: mysql:8
     container_name: moki-db

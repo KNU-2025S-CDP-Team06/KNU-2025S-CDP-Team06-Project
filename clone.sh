@@ -17,3 +17,4 @@ pull_or_clone() {
 pull_or_clone https://github.com/KNU-2025S-CDP-Team06/KNU-2025S-CDP-Team06-Frontend.git Frontend
 pull_or_clone https://github.com/KNU-2025S-CDP-Team06/KNU-2025S-CDP-Team06-Backend.git Backend
 pull_or_clone https://github.com/KNU-2025S-CDP-Team06/KNU-2025S-CDP-Team06-MLOps.git MLOps
+pull_or_clone https://github.com/KNU-2025S-CDP-Team06/KNU-2025S-CDP-Team06-AI.git AI
