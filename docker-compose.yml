@@ -6,6 +6,8 @@ services:
       context: ./Frontend
       args:
         BACKEND_URL: ${BACKEND_URL}
+        ALLOW_IMAGE_HOSTNAME: ${ALLOW_IMAGE_HOSTNAME}
+        PROXY_URL: ${PROXY_URL}
     container_name: moki-front
     ports:
       - "${FRONTEND_PORT}:80"
