@@ -62,7 +62,7 @@ class Config:
         "database": "moki",
         "port": $MYSQL_INNER_PORT
     }
-    DATABASE_URL = "$DATABASE_URL"
+    DATABASE_URL = "mysql+py$DATABASE_URL"
 config = Config
 EOF
 
